@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 01</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<label>Informe o Valor do Cheque:</label>
+	<input type="text" id="valChq" placeholder="Valor do Cheque!"> <br>
+	<label>Informe o Valor da Taxa: &emsp;</label>     <!--Para add espaços: &nbsp; &ensp; &emsp-->
+	<input type="text" id="valTx" placeholder="Valor da Taxa!"> <br>
+	<label>Informe o Prazo: &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;</label>
+	<input type="text" id="valPrazo" placeholder="Prazo do Cheque!"> <br>	
+	<label>O Valor Líquido é: </label>
+	<label id="valLiq"></label> <br>
+	<input type="submit" value="Calcular" onclick="calcular()">
+	<input type="submit" value="Limpar" onclick="limpar()">
+</body>
+<script type="text/javascript">
+	function calcular(){
+		var valChq   = document.getElementById('valChq').value;
+		var valTx    = document.getElementById('valTx').value;
+		var valPrazo = document.getElementById('valPrazo').value;
+		var result   = ((parseFloat(valChq) * parseFloat(valTx/100)) /30) * parseFloat(valPrazo);
+
+		document.getElementById('valLiq').innerHTML = result;
+		//alert(result);
+	}
+	function limpar(){
+		document.getElementById('valChq').value     = "";
+		document.getElementById('valTx').value      = "";
+		document.getElementById('valPrazo').value   = "";
+		document.getElementById('valLiq').innerHTML = "";	
+	}
+</script>
+</html>
