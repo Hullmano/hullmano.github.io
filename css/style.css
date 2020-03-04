@@ -1,0 +1,12 @@
+@media only screen and (max-device-width: 350px) {
+     .wrap { width:100%; }
+}
+
+.wrap{
+	width: 350px;
+	margin: 0 auto;
+}
+
+.wrap input[type=text]{
+	width: 100%;
+}
