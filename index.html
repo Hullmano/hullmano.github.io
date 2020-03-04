@@ -3,19 +3,21 @@
 <head>
 	<title>Project 01</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="hullmano.github.io/css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<label>Informe o Valor do Cheque:</label>
-	<input type="text" id="valChq" placeholder="Valor do Cheque!"> <br>
-	<label>Informe o Valor da Taxa: &emsp;</label>     <!--Para add espaços: &nbsp; &ensp; &emsp-->
-	<input type="text" id="valTx" placeholder="Valor da Taxa!"> <br>
-	<label>Informe o Prazo: &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;</label>
-	<input type="text" id="valPrazo" placeholder="Prazo do Cheque!"> <br>	
-	<label>O Valor Líquido é: </label>
-	<label id="valLiq"></label> <br>
-	<input type="submit" value="Calcular" onclick="calcular()">
-	<input type="submit" value="Limpar" onclick="limpar()">
+	<div class="wrap">
+		<label>Informe o Valor do Cheque:</label>
+		<input type="text" id="valChq" placeholder="Valor do Cheque!"> <br>
+		<label>Informe o Valor da Taxa: &emsp;</label>     <!--Para add espaços: &nbsp; &ensp; &emsp-->
+		<input type="text" id="valTx" placeholder="Valor da Taxa!"> <br>
+		<label>Informe o Prazo: &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;</label>
+		<input type="text" id="valPrazo" placeholder="Prazo do Cheque!"> <br>	
+		<label>O Valor Líquido é: </label>
+		<label id="valLiq"></label> <br>
+		<input type="submit" value="Calcular" onclick="calcular()">
+		<input type="submit" value="Limpar" onclick="limpar()">
+	</div>
 </body>
 <script type="text/javascript">
 	function calcular(){
