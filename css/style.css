@@ -2,6 +2,7 @@
 {
      .wrap{width:100%;}
      .wrap input[type=text]{width: 100%;}
+     .wrap{font-size:21px;}	
 }
 
 .wrap{
