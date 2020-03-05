@@ -9,25 +9,32 @@
 <body>
 	<div class="wrap">
 		<label>Informe o Valor do Cheque:</label>
-		<input type="text" id="valChq" placeholder="Valor do Cheque!"> <br>
+		<input type="text" id="valChq" placeholder="Valor do Cheque!" onblur="formatMoeda(this)"> <br>
 		<label>Informe o Valor da Taxa: &emsp;</label>     <!--Para add espaços: &nbsp; &ensp; &emsp-->
-		<input type="text" id="valTx" placeholder="Valor da Taxa!"> <br>
+		<input type="text" id="valTx" placeholder="Valor da Taxa!" onblur="formatMoeda(this)"> <br>
 		<label>Informe o Prazo: &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;</label>
 		<input type="text" id="valPrazo" placeholder="Prazo do Cheque!"> <br>	
 		<label>O Valor Líquido é: </label>
 		<label id="valLiq"></label> <br>
 		<input type="submit" value="Calcular" onclick="calcular()">
 		<input type="submit" value="Limpar" onclick="limpar()">
+
 	</div>
 </body>
 <script type="text/javascript">
+	function formatMoeda(btn){
+		var valor = btn.value.replace(',','.'); //o parseFloat só considera decimal com ponto e nao com virgula
+		var novoValor = parseFloat(valor).toFixed(2);
+		btn.value = novoValor; 
+	}
+
 	function calcular(){
 		var valChq   = document.getElementById('valChq').value;
 		var valTx    = document.getElementById('valTx').value;
 		var valPrazo = document.getElementById('valPrazo').value;
 		var result   = ((parseFloat(valChq) * parseFloat(valTx/100)) /30) * parseFloat(valPrazo);
 
-		document.getElementById('valLiq').innerHTML = result;
+		document.getElementById('valLiq').innerHTML = result.toFixed(2);
 		//alert(result);
 	}
 	function limpar(){
