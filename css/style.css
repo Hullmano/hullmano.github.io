@@ -2,7 +2,9 @@
 {
      .wrap{width:100%;}
      .wrap input[type=text]{width: 100%;}
-     .wrap input[type=text]{font-size: 18px;}
+     .wrap input[type=text]{font-size: 16px;}
+     .wrap input[type=tel]{width: 100%;}
+     .wrap input[type=tel]{font-size: 16px;}
      .wrap{font-size:21px;}
 }
 
@@ -13,6 +15,11 @@
 }
 
 .wrap input[type=text]{
+	width: 100%;
+	font-size: 16px;
+}
+
+.wrap input[type=tel]{
 	width: 100%;
 	font-size: 16px;
 }
