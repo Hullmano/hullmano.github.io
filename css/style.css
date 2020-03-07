@@ -9,7 +9,7 @@
 }
 
 .wrap{
-	width: 100%;
+	width: 315px;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -22,4 +22,26 @@
 .wrap input[type=tel]{
 	width: 100%;
 	font-size: 16px;
+}
+
+.linha{
+	width: 315px;
+}
+
+.coluna{
+	float: left;
+}
+
+
+.col1{
+	width: 77px;
+}
+.col2{
+	width: 154px;
+}
+.col3{
+	width: 231px;
+}
+.col4{
+	width: 308px;
 }
