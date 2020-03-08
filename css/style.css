@@ -1,8 +1,8 @@
 @media screen and (min-width: 320px) and (max-width: 568px)
 {
      .wrap{width:100%;}
-     .wrap input[type=text]{width: 100%;}
-     .wrap input[type=text]{font-size: 16px;}
+     .wrap input[type=tel]{width: 100%;}
+     .wrap input[type=tel]{font-size: 16px;}
      .wrap input[type=tel]{width: 100%;}
      .wrap input[type=tel]{font-size: 16px;}
      .wrap{font-size:21px;}
@@ -14,34 +14,32 @@
 	margin: 0 auto;
 }
 
-.wrap input[type=text]{
-	width: 100%;
-	font-size: 16px;
-}
-
 .wrap input[type=tel]{
-	width: 100%;
+	width: 98%;
 	font-size: 16px;
 }
 
 .linha{
-	width: 315px;
+	width: 310px;
 }
 
-.coluna{
+.col{
 	float: left;
 }
 
 
 .col1{
-	width: 77px;
+	width: 28%;
 }
 .col2{
-	width: 154px;
+	width: 16%;
 }
 .col3{
-	width: 231px;
+	width: 28%;
 }
 .col4{
-	width: 308px;
+	width: 28%;
+}
+.cRed{
+	color: red;
 }
