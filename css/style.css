@@ -1,4 +1,4 @@
-@media screen and (min-width: 330px) and (max-width: 568px)
+@media screen and (min-width: 320px) and (max-width: 568px)
 {
      .wrap{width:100%;}
      .wrap input[type=tel]{width: 100%;}
@@ -10,7 +10,7 @@
 }
 
 .wrap{
-	width: 315px;
+	width: 320px;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -21,7 +21,7 @@
 }
 
 .linha{
-	width: 310px;
+	width: 320px;
 }
 
 .col{
